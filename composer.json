@@ -12,6 +12,8 @@
     ],
     "require": {
         "php": ">=8.4",
+        "ext-bcmath": "*",
+        "ext-hash": "*",
         "symfony/string": "^7.2|^8.0|^8.1"
     },
     "require-dev": {
