@@ -25,6 +25,10 @@
         "psr-4": {
             "OneToMany\\Formatters\\": "src/"
         },
+        "files": [
+            "src/Address/library.php",
+            "src/Number/library.php"
+        ],
         "exclude-from-classmap": [
             "/Tests/"
         ]
