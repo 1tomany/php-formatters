@@ -1,0 +1,54 @@
+{
+    "name": "1tomany/php-formatters",
+    "description": "A simple, low dependency library to format a wide variety of values",
+    "license": "MIT",
+    "type": "library",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "keywords": [
+        "formatter",
+        "address formatter",
+        "number formatted"
+    ],
+    "require": {
+        "php": ">=8.4",
+        "symfony/string": "^7.2|^8.0|^8.1"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.93",
+        "phpstan/phpstan": "^2.1.55",
+        "phpunit/phpunit": "^13.1.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "OneToMany\\Formatters\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "OneToMany\\Formatters\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "fix": "php-cs-fixer fix",
+        "stan": "phpstan",
+        "test": "phpunit",
+        "flat": [
+            "@fix",
+            "@stan",
+            "@test"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Vic Cherubini",
+            "email": "vcherubini@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    }
+}
